@@ -6,18 +6,25 @@
 
 body {
   font-family: 'Itim', cursive;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #FFBED2;
+}
+
+.page-title {
+  color: white;
+  font-size: 40px;
+  margin: 24px;
 }
 
 .container {
   display: flex;
-  /* flex-direction: column; */
   width: 90vw;
+  margin-left: 10px;
 }
 
 .panel {
@@ -54,12 +61,12 @@ body {
 
 @media(max-width: 480px) {
   .container {
-    width: 100vw;
+    width: 90vw;
     flex-direction: column;
     height: 90vh;
   }
-  /* .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  } */
+  
+  .page-title {
+    font-size: 32px;
+  }
 }
